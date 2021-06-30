@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
   has_many :notes
   # add associations here
 
-  def song_artist_name=(name)
+  def artist_name=(name)
     self.artist = Artist.find_or_create_by(name: name)
   end
 
