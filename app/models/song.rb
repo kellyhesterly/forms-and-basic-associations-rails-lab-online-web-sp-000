@@ -11,4 +11,10 @@ class Song < ActiveRecord::Base
   def artist_name
     self.artist ? self.artist.name : nil
   end
+
+  def genre_name
+  end
+
+  def genre_name
+  end
 end
