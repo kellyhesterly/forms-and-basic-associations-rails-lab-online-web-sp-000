@@ -12,7 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.create({artist_name: params[:song][:artist_name], title: params[:song][:title], genre_id: params[:song][:genre_id], notes: params[:song][:notes]})
+    @song = Song.create({artist_name: params[:song][:artist_name], title: params[:song][:title], genre_id: params[:song][:genre_id], note_contents: params[:song][:note_contents]})
 
     if @song.save
       redirect_to @song
